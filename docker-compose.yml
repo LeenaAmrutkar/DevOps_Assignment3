@@ -11,13 +11,9 @@ services:
                 build: .
                 ports:
                         - "1021:1021"
-                depends_on:
-                        - test-1
 
         test-3:
                 image: mysql
                 build: .
                 ports:
                         - "1022:1022"
-                depends_on:
-                        - test-2
